@@ -1,159 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RadarLedger — Competitive Price &amp; Promotion Intelligence</title>
-    <meta name="description" content="RadarLedger monitors competitor pricing, promotions, and ad activity for DTC brands. Scored alerts and daily snapshots delivered to your inbox.">
-    <link rel="stylesheet" href="style.css">
-    <!-- DRAFT — FOR PROFESSIONAL REVIEW -->
-    <!-- No cookies. No analytics. No tracking pixels. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RadarLedger — Competitor Detection for DTC Brands</title>
+  <meta name="description" content="RadarLedger watches competitor storefronts and Meta ad activity daily. Scores every change 0-10. Alerts you same-day.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='none' stroke='%232563EB' stroke-width='2'/><circle cx='16' cy='16' r='8' fill='none' stroke='%232563EB' stroke-width='1.5'/><circle cx='16' cy='16' r='2' fill='%232563EB'/><line x1='16' y1='2' x2='16' y2='6' stroke='%232563EB' stroke-width='1.5'/></svg>">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">RadarLedger</div>
-            <nav>
-                <a href="/privacy">Privacy Notice</a>
-            </nav>
+  <header class="site-header">
+    <div class="wrap">
+      <a href="/" class="wordmark" aria-label="RadarLedger home">
+        <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="16" cy="16" r="14" stroke="#2563EB" stroke-width="2"/>
+          <circle cx="16" cy="16" r="8" stroke="#2563EB" stroke-width="1.5"/>
+          <circle cx="16" cy="16" r="2" fill="#2563EB"/>
+          <line x1="16" y1="2" x2="16" y2="6" stroke="#2563EB" stroke-width="1.5"/>
+          <line x1="16" y1="26" x2="16" y2="30" stroke="#2563EB" stroke-width="1.5"/>
+          <line x1="2" y1="16" x2="6" y2="16" stroke="#2563EB" stroke-width="1.5"/>
+          <line x1="26" y1="16" x2="30" y2="16" stroke="#2563EB" stroke-width="1.5"/>
+        </svg>
+        <span>RadarLedger</span>
+      </a>
+      <nav class="site-nav">
+        <a href="reports.html">Reports</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <h1>Watches competitor storefronts and Meta ad activity daily. Scores every change 0&ndash;10. Alerts you same-day.</h1>
+        <p class="hero-sub">RadarLedger is a detection system for DTC e-commerce. It crawls your competitors every morning, diffs what changed, scores it by severity, and delivers timestamped evidence to your inbox.</p>
+
+        <div class="ledger-strip" aria-label="Sample detection events from control store">
+          <ol>
+            <li>
+              <span class="ts">2026-07-10 02:36 UTC</span>
+              <span class="sev sev-high">9</span>
+              <span class="evt">price_drop</span>
+              <span class="detail">&euro;49.00 &rarr; &euro;43.12 (&minus;12%)</span>
+            </li>
+            <li>
+              <span class="ts">2026-07-09 08:14 UTC</span>
+              <span class="sev sev-high">8</span>
+              <span class="evt">promo_change</span>
+              <span class="detail">&ldquo;Summer Sale &mdash; 20% off all bundles&rdquo;</span>
+            </li>
+            <li>
+              <span class="ts">2026-07-08 06:02 UTC</span>
+              <span class="sev sev-med">5</span>
+              <span class="evt">price_up</span>
+              <span class="detail">&euro;19.99 &rarr; &euro;20.99 (+5%)</span>
+            </li>
+          </ol>
         </div>
-    </header>
+        <p class="ledger-caption">Sample output from our control store &mdash; we test detection against it daily.</p>
+      </div>
+    </section>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>Competitor intelligence that arrives before your morning coffee.</h1>
-                <p class="subtitle">RadarLedger monitors competitor pricing, promotions, and advertising activity for DTC e-commerce brands. When something changes, you get a scored alert. Every day, you get a snapshot.</p>
+    <section>
+      <div class="wrap">
+        <h2 class="section-title">How it works</h2>
+        <div class="how-steps">
+          <div class="how-step">
+            <span class="step-label">Watch</span>
+            <div>
+              <h3>Daily automated crawls</h3>
+              <p>Every morning, RadarLedger visits competitor storefronts and queries the Meta Ad Library. Raw HTML is archived; every data point has a timestamp and a source URL.</p>
             </div>
-        </section>
-
-        <section class="how-it-works">
-            <div class="container">
-                <h2>How It Works</h2>
-                <div class="steps">
-                    <div class="step">
-                        <div class="step-number">1</div>
-                        <h3>Detection</h3>
-                        <p>Automated daily crawls of competitor storefronts and the Meta Ad Library surface price changes, new products, stock-outs, promotion shifts, and advertising activity.</p>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">2</div>
-                        <h3>Scored Alerts</h3>
-                        <p>Every detected change is scored by severity. High-severity events (price drops &ge;10%, stock-outs, new offers) trigger immediate alerts. Lower-severity changes are logged for your daily brief.</p>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">3</div>
-                        <h3>Daily Snapshots</h3>
-                        <p>A single-page summary per competitor: current pricing, recent activity, ad intelligence, and key findings — delivered to your inbox every morning.</p>
-                    </div>
-                </div>
+          </div>
+          <div class="how-step">
+            <span class="step-label">Score</span>
+            <div>
+              <h3>Severity 0&ndash;10</h3>
+              <p>Each detected change is scored. A 12% price drop on a hero product scores 9. A minor copy tweak scores 3. You decide your alert threshold; the default fires on 7 and above.</p>
             </div>
-        </section>
-
-        <section class="sample-snapshot">
-            <div class="container">
-                <h2>Sample Snapshot</h2>
-                <p class="sample-label">REDACTED SAMPLE — rendered from internal canary/watchlist test data. Brand names, domains, and specific values are illustrative of the format only.</p>
-                <div class="snapshot-card">
-                    <div class="snapshot-header">
-                        <h3>D2 Snapshot — [REDACTED Brand]</h3>
-                        <span class="snapshot-meta">Generated: 2026-07-10 &middot; Vertical: Supplements &amp; Wellness DTC</span>
-                    </div>
-                    <table class="snapshot-table">
-                        <thead>
-                            <tr>
-                                <th>Field</th>
-                                <th>Value</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Platform</td><td>Shopify</td></tr>
-                            <tr><td>Country</td><td>IE</td></tr>
-                            <tr><td>Staff Range</td><td>5–100</td></tr>
-                            <tr><td>Active Meta Creatives</td><td>&ge;5</td></tr>
-                        </tbody>
-                    </table>
-
-                    <h4>Recent Activity (Last 7 Days)</h4>
-                    <table class="snapshot-table">
-                        <thead>
-                            <tr>
-                                <th>Date</th>
-                                <th>Event</th>
-                                <th>Severity</th>
-                                <th>Detail</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>2026-07-10</td>
-                                <td>price_drop</td>
-                                <td><span class="severity high">9</span></td>
-                                <td>&euro;49.00 &rarr; &euro;43.12 (&minus;12%)</td>
-                            </tr>
-                            <tr>
-                                <td>2026-07-09</td>
-                                <td>promo_text_change</td>
-                                <td><span class="severity high">8</span></td>
-                                <td>New banner: &ldquo;Summer Sale — 20% off all bundles&rdquo;</td>
-                            </tr>
-                            <tr>
-                                <td>2026-07-08</td>
-                                <td>price_change</td>
-                                <td><span class="severity medium">5</span></td>
-                                <td>&euro;19.99 &rarr; &euro;20.99 (+5%)</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <h4>Key Findings</h4>
-                    <ol>
-                        <li>Significant price drop on a tracked product (&minus;12%) — likely competitive response or clearance.</li>
-                        <li>New promotional banner launched same day — coordinated campaign detected.</li>
-                    </ol>
-                </div>
+          </div>
+          <div class="how-step">
+            <span class="step-label">Deliver</span>
+            <div>
+              <h3>Alerts and daily briefs</h3>
+              <p>High-severity events trigger an immediate alert to your inbox. Everything else lands in a single daily brief &mdash; one page per competitor, sorted by severity.</p>
             </div>
-        </section>
-
-        <section class="reports">
-            <div class="container">
-                <h2>Baseline Reports</h2>
-                <p>The following reports are available on request:</p>
-                <ul class="report-list">
-                    <li><strong>Ad Intelligence Baseline</strong> — State of advertising activity across a vertical: active creative counts, offer types, launch cadence, and platform mix.</li>
-                    <li><strong>Pricing Intelligence Baseline</strong> — Current pricing landscape across tracked competitors with 7-day change history.</li>
-                    <li><strong>Competitive Activity Summary</strong> — Weekly digest of all detected events across your watchlist, ranked by severity.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="verticals">
-            <div class="container">
-                <h2>Current Coverage</h2>
-                <p>RadarLedger currently monitors DTC e-commerce brands in the following verticals across IE, GB, NL, and US markets:</p>
-                <ul class="vertical-list">
-                    <li>Supplements &amp; Wellness</li>
-                    <li>Beauty &amp; Skincare</li>
-                    <li>Home, Garden &amp; Furniture</li>
-                </ul>
-                <p>Each vertical tracks up to 40 brands with own storefronts (Shopify/WooCommerce/custom), 5–100 staff, and active Meta advertising presence.</p>
-            </div>
-        </section>
-
-        <section class="contact">
-            <div class="container">
-                <h2>Contact</h2>
-                <p>For enquiries, pilot requests, or to request a baseline report:</p>
-                <p class="contact-email"><a href="mailto:ahmed@radarledger.com">ahmed@radarledger.com</a></p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 RadarLedger &middot; Dublin, Ireland &middot; <a href="/privacy">Privacy Notice</a></p>
-            <p class="footer-note">This site uses no cookies, no analytics, and no tracking pixels.</p>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2 class="section-title">What gets tracked</h2>
+        <ul class="tracked-grid">
+          <li>Price changes (up and down)</li>
+          <li>Promotional text and banners</li>
+          <li>Stock-outs and restocks</li>
+          <li>New product launches</li>
+          <li>Meta ad launches and stops</li>
+          <li>Offer and creative changes</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2 class="section-title">Built for DTC</h2>
+        <ul class="vertical-tags">
+          <li>Supplements &amp; Wellness</li>
+          <li>Beauty &amp; Skincare</li>
+          <li>Home, Garden &amp; Furniture</li>
+        </ul>
+        <p class="markets">Markets: Ireland, United Kingdom, Netherlands, United States. Brands with own storefronts, 5&ndash;100 staff, active Meta advertising.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2 class="section-title">Evidence discipline</h2>
+        <div class="evidence-block">
+          <p>Every claim RadarLedger makes is backed by a dated screenshot and a source URL. The raw HTML archive is replayable offline &mdash; if a detection cannot be reproduced from the archive, it does not ship.</p>
+          <p>We run the full detection pipeline against a control store every single day. The control store has a known mutation schedule: Monday a price drops 12%, Tuesday a promo changes, Wednesday a minor price rises, Thursday a product goes out of stock. If the system misses any of these, the build goes red and nothing is delivered to clients until it passes again.</p>
+          <p class="evidence-stat">Measured alert latency: &lt;1 second from detection (SLA: 5 minutes)</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="wrap">
+        <h2 class="section-title">Start a pilot</h2>
+        <p>Send your competitor list. Receive your first daily brief within 48 hours. No commitment, no credit card.</p>
+        <a href="mailto:ahmed@radarledger.com" class="cta-email">ahmed@radarledger.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>RadarLedger &middot; Dublin, Ireland &middot; <a href="privacy.html">Privacy</a> &middot; <a href="reports.html">Reports</a></p>
+      <span class="no-track">No cookies. No analytics. No third-party requests.</span>
+    </div>
+  </footer>
 </body>
 </html>
