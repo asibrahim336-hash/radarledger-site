@@ -42,6 +42,7 @@ body { font-family: var(--font-body); color: var(--ink); background: var(--paper
 .site-header .wrap { display: flex; justify-content: space-between; align-items: center; }
 .wordmark { display: flex; align-items: center; gap: var(--space-xs); text-decoration: none; color: var(--ink); }
 .wordmark svg { width: 24px; height: 24px; }
+.wordmark .brand-logo { width: auto; height: 22px; display: block; }
 .wordmark span { font-family: var(--font-display); font-weight: 700; font-size: 1.125rem; letter-spacing: -0.02em; }
 .site-nav { display: flex; gap: var(--space-md); }
 .site-nav a { color: var(--muted); text-decoration: none; font-size: 0.875rem; font-weight: 500; }

@@ -1,0 +1,209 @@
+{
+  "brand": "Obzio",
+  "generated_utc": "2026-07-22",
+  "source_master": {
+    "file": "vectorial.ai (BrandBucket delivery: sale_41884_1.zip / obzio_com/)",
+    "format": "CorelDRAW-authored PDF-1.5 carrying Adobe Illustrator AI5 private art (PieceInfo/AIPrivateData2)",
+    "note": "Canonical mark. Derivatives are a faithful vector transcription of the master's exact path coordinates; the mark was NOT redrawn, approximated or altered. Renderable PDF layer was empty (art stored only in the AI private stream), so vectors were transcribed operator-for-operator from the AI PostScript and colour-matched to the official large.png export.",
+    "art_bbox_pts": "133 310 490 667 (357x357pt page region)",
+    "aspect_full_logo": "3.556 : 1"
+  },
+  "colours": {
+    "wordmark_charcoal": "#474443",
+    "symbol_gradient": {
+      "type": "linear",
+      "direction": "horizontal (left=dark → right=light)",
+      "stop_0_dark": "#3E9029",
+      "stop_1_light": "#ACCE22",
+      "ai_cmyk_stops": [
+        "C40 M0 Y100 K0 (light)",
+        "C78 M25 Y100 K0 (dark)"
+      ]
+    },
+    "dark_surface_backdrop": "#14261B (neutral dark backdrop for reversed assets; not a mandated brand token)"
+  },
+  "assets": {
+    "logo_full": [
+      {
+        "file": "obzio-logo-full.svg",
+        "bytes": 6919,
+        "dimensions": "vector",
+        "sha256_16": "6cb8dce878b88bde",
+        "purpose": "Full horizontal logo, light backgrounds (charcoal wordmark). Primary."
+      },
+      {
+        "file": "png/obzio-logo-full-2048.png",
+        "bytes": 98572,
+        "dimensions": "2048x576",
+        "sha256_16": "1994d5ba7ebce606",
+        "purpose": "Full logo, transparent PNG @2048w"
+      },
+      {
+        "file": "png/obzio-logo-full-1024.png",
+        "bytes": 46004,
+        "dimensions": "1024x288",
+        "sha256_16": "5e0cd07d4d68e19b",
+        "purpose": "Full logo, transparent PNG @1024w"
+      },
+      {
+        "file": "webp/obzio-logo-full-2048.webp",
+        "bytes": 42674,
+        "dimensions": "2048x576",
+        "sha256_16": "f82a33fea29a2240",
+        "purpose": "Full logo, WebP @2048w"
+      }
+    ],
+    "logo_full_dark": [
+      {
+        "file": "obzio-logo-full-dark.svg",
+        "bytes": 6916,
+        "dimensions": "vector",
+        "sha256_16": "8a505fe0600d369d",
+        "purpose": "Full horizontal logo, dark backgrounds (white wordmark, symbol unchanged)."
+      },
+      {
+        "file": "png/obzio-logo-full-dark-2048.png",
+        "bytes": 91875,
+        "dimensions": "2048x576",
+        "sha256_16": "7464a638e0b7cc11",
+        "purpose": "Dark-bg full logo, transparent PNG @2048w"
+      }
+    ],
+    "symbol": [
+      {
+        "file": "obzio-symbol.svg",
+        "bytes": 4692,
+        "dimensions": "vector",
+        "sha256_16": "2dac759bced86180",
+        "purpose": "Symbol only (vector)"
+      },
+      {
+        "file": "png/obzio-symbol-1024.png",
+        "bytes": 113587,
+        "dimensions": "1024x1012",
+        "sha256_16": "4f7ed6a73570a3fb",
+        "purpose": "Symbol only, transparent PNG @1024"
+      },
+      {
+        "file": "png/obzio-symbol-512.png",
+        "bytes": 51310,
+        "dimensions": "512x506",
+        "sha256_16": "abb6414a8e81d3bd",
+        "purpose": "Symbol only, transparent PNG @512"
+      },
+      {
+        "file": "webp/obzio-symbol-1024.webp",
+        "bytes": 49872,
+        "dimensions": "1024x1012",
+        "sha256_16": "9be8630f19fa93c0",
+        "purpose": "Symbol only, WebP @1024"
+      },
+      {
+        "file": "obzio-icon.svg",
+        "bytes": 4704,
+        "dimensions": "vector",
+        "sha256_16": "babe606be38f1e67",
+        "purpose": "Symbol in square canvas w/ 80% safe padding (app-icon source)"
+      },
+      {
+        "file": "obzio-favicon.svg",
+        "bytes": 4700,
+        "dimensions": "vector",
+        "sha256_16": "f0ac29a0ce41c054",
+        "purpose": "Symbol in square canvas w/ tight padding (favicon source)"
+      }
+    ],
+    "icons": [
+      {
+        "file": "icons/favicon.ico",
+        "bytes": 15086,
+        "dimensions": "48x4832x3216x16",
+        "sha256_16": "c77c2acb223daba3",
+        "purpose": "favicon.ico (16/32/48 multi-res)"
+      },
+      {
+        "file": "icons/favicon-16.png",
+        "bytes": 805,
+        "dimensions": "16x16",
+        "sha256_16": "6d92ef091bf30400",
+        "purpose": "favicon 16"
+      },
+      {
+        "file": "icons/favicon-32.png",
+        "bytes": 2249,
+        "dimensions": "32x32",
+        "sha256_16": "534aa70ecaf690dd",
+        "purpose": "favicon 32"
+      },
+      {
+        "file": "icons/favicon-48.png",
+        "bytes": 3775,
+        "dimensions": "48x48",
+        "sha256_16": "f5c7c5dfc74728f5",
+        "purpose": "favicon 48"
+      },
+      {
+        "file": "icons/icon-192.png",
+        "bytes": 14312,
+        "dimensions": "192x192",
+        "sha256_16": "717abd8378b3c7d5",
+        "purpose": "PWA/manifest icon 192 (transparent)"
+      },
+      {
+        "file": "icons/icon-512.png",
+        "bytes": 41076,
+        "dimensions": "512x512",
+        "sha256_16": "d9c196c7157c67c5",
+        "purpose": "PWA/manifest icon 512 (transparent)"
+      },
+      {
+        "file": "icons/icon-maskable-512.png",
+        "bytes": 70673,
+        "dimensions": "512x512",
+        "sha256_16": "0909a7b29f4bbe35",
+        "purpose": "Maskable icon 512 (white field, safe padding)"
+      },
+      {
+        "file": "icons/apple-touch-icon-180.png",
+        "bytes": 22699,
+        "dimensions": "180x180",
+        "sha256_16": "056fc4be49803717",
+        "purpose": "Apple touch icon 180 (white field)"
+      }
+    ],
+    "social": [
+      {
+        "file": "social/obzio-og.png",
+        "bytes": 66753,
+        "dimensions": "1200x630",
+        "sha256_16": "ca889930aeda5670",
+        "purpose": "Open Graph / social card 1200x630 (light)"
+      },
+      {
+        "file": "social/obzio-og-dark.png",
+        "bytes": 65435,
+        "dimensions": "1200x630",
+        "sha256_16": "0d980391233bc9b4",
+        "purpose": "Open Graph / social card 1200x630 (dark)"
+      },
+      {
+        "file": "social/obzio-og.webp",
+        "bytes": 9286,
+        "dimensions": "1200x630",
+        "sha256_16": "8306ecddfba0f96c",
+        "purpose": "Open Graph card WebP (light)"
+      }
+    ]
+  },
+  "usage_surfaces": [
+    "public website",
+    "private platform",
+    "metadata/social",
+    "authentication screens",
+    "sales materials"
+  ],
+  "known_constraints": [
+    "16px favicon: the intricate 4-fold mark loses its central diamond at 16px; tight padding applied to maximise legibility. Mark intentionally not simplified (do-not-alter constraint)."
+  ],
+  "provenance_guardrails": "No company number, VAT, legal-entity suffix, registered address or regulated claim is asserted by these assets. Wordmark is neutral 'obzio'."
+}
